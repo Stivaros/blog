@@ -19,7 +19,7 @@ module.exports = {
         fonts: [
           {
             family: `Work Sans`,
-            subsets: [`600`],
+            variants: [`600`],
           },
           {
             family: `Quattrocento Sans`,
