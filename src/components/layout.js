@@ -11,7 +11,6 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          ...scale(1.5),
           marginBottom: rhythm(1.5),
           marginTop: 0,
         }}
@@ -19,11 +18,11 @@ const Layout = ({ location, title, children }) => {
         <Link
           style={{
             boxShadow: `none`,
-            color: `inherit`,
+            color: `#689f38`,
           }}
           to={`/`}
         >
-          {title}
+          {title} | All Posts
         </Link>
       </h1>
     )
@@ -31,18 +30,18 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
         }}
       >
         <Link
           style={{
             boxShadow: `none`,
-            color: `inherit`,
+            color: `#689f38`,
+            fontSize: `0.5em`,
           }}
           to={`/`}
         >
-          {title}
+          &larr; Back to {title} Index
         </Link>
       </h3>
     )
