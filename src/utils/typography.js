@@ -26,8 +26,6 @@ fairyGatesTheme.overrideThemeStyles = () => {
   }
 }
 
-delete fairyGatesTheme.googleFonts
-
 const typography = new Typography(fairyGatesTheme)
 
 // Hot reload typography in development.
