@@ -70,13 +70,13 @@ const Bio = () => {
             borderRadius: `0.25em`
           }}
         >
-          <a href={`http://stivaros.com/`} style={{margin: `0 0.25em`}}>
+          <a href={`http://stivaros.com/`} style={{margin: `0 0.25em`}} aria-label="Home">
             <FontAwesomeIcon icon={faHome} />
           </a>
-          <a href={`https://twitter.com/${social.twitter}`} style={{margin: `0 0.25em`}}>
+          <a href={`https://twitter.com/${social.twitter}`} style={{margin: `0 0.25em`}} aria-label="Twitter">
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href={`https://linkedin.com/in/${social.linkedIn}`} style={{margin: `0 0.25em`}}>
+          <a href={`https://linkedin.com/in/${social.linkedIn}`} style={{margin: `0 0.25em`}} aria-label="LinkedIn">
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </span>
