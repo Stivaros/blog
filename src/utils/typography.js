@@ -2,26 +2,34 @@ import Typography from "typography"
 import fairyGatesTheme from "typography-theme-fairy-gates"
 
 fairyGatesTheme.overrideThemeStyles = () => {
-  const linkColor = `#8bc34a`;
-  const linkDarkShade = `#689f38`;
-  const linkLightShade = `#dcedc8`;
+  const midGreen = `#8BC34A`;
+  const darkGreen = `#33691E`;
+  const lightGreen = `#C5E1A5`;
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "h1 a": {
+      textDecoration: `none`,
+    },
     "a": {
-      color: linkColor,
+      color: darkGreen,
       textShadow: `none`,
-      backgroundImage: `none`
+      backgroundImage: `none`,
+      textDecoration: `underline`
     },
     "a:hover": {
-      color: linkDarkShade,
+      backgroundColor: lightGreen,
       transition: `all 0.4s`
     },
     "blockquote": {
-      backgroundColor: linkLightShade,
-      borderLeftColor: linkColor,
+      backgroundColor: lightGreen,
+      borderLeftColor: midGreen,
       padding: `0.5em`,
+    },
+    "a:focus": {
+      boxShadow: `0 0 0 3px ${midGreen}    `,
+      outline: `none`,    
     }
   }
 }

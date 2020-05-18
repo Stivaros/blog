@@ -65,8 +65,7 @@ const Bio = () => {
         {` `}
         <span
           style={{
-            backgroundColor: `#dcedc8`,
-            color: `#689f38`,
+            backgroundColor: `#C5E1A5`,
             padding: `0.4em 0.25em 0.25em`,
             borderRadius: `0.25em`
           }}

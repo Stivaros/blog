@@ -15,13 +15,7 @@ const Layout = ({ location, title, children }) => {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            color: `#689f38`,
-          }}
-          to={`/`}
-        >
+        <Link to={`/`}>
           {title} | All Posts
         </Link>
       </h1>
@@ -35,8 +29,6 @@ const Layout = ({ location, title, children }) => {
       >
         <Link
           style={{
-            boxShadow: `none`,
-            color: `#689f38`,
             fontSize: `0.5em`,
           }}
           to={`/`}

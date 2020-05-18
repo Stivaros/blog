@@ -80,7 +80,7 @@ module.exports = {
         short_name: `ES' Blog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#8bc34a`,
+        theme_color: `#8BC34A`,
         display: `minimal-ui`,
         icon: `content/assets/favicon.png`,
       },
