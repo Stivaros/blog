@@ -12,11 +12,11 @@ I hasten to add that, while this approach has worked for me, I have friends and 
 
 ## The Benefits of this Approach
 
-When faced with a problem, two things need to come together for resolution. On one side, an understanding of the problem itself and, on the other, an understanding of how we can solve the problem. Developers will recognise this pattern from their support tickets, understanding how to reproduce a bug is necessary before implementing a solution.
+When faced with a problem, two things need to come together for resolution. On one side, an understanding of the problem itself and, on the other, an understanding of how we can solve the problem. Developers will recognise this pattern from their support tickets; understanding how to reproduce a bug is necessary before implementing a solution.
 
 If I know how to wield a hammer and the problem asks me to put a nail into a block of wood, I'm confident about my ability to solve this problem.
 
-If I know how to wield a screwdriver and the problem asks me to put a nail into a block of wood, I know that a) I can fix this problem and b) am aware that a proper solution is within my capabilities.
+If I know how to wield a screwdriver and the problem asks me to put a nail into a block of wood, I know that a) I can fix this problem and b) I am aware that a proper solution is within my capabilities.
 
 If, however, I know how to wield a spirit level and am asked to complete the same task, I am at a loss. Firstly, I cannot solve this problem. Secondly, I do not even know how I can go about solving it.
 
@@ -26,7 +26,7 @@ While this may seem like the argument against my approach (well, it successfully
 
 ## Know Limitations
 
-Knowing your limitations does not mean you refuse to help when something is not within your area of expertise, nor does it mean that you should remain willingly ignorant. It does, however, mean that you should respect the extent of your abilities and avoid misleading people. You cannot solve every problem, don't pretend that you can. 
+Knowing your limitations does not mean you refuse to help when something is not within your area of expertise, nor does it mean that you should remain willingly ignorant. It does, however, mean that you should respect the extent of your abilities and avoid misleading people. You cannot solve every problem, don't pretend that you can.
 
 If you're the best person to solve a problem within your place of work, let people know you're not an expert and give it a go. You may end up adding another tool to your toolbox. At the very least, you will confirm the weakness in your toolbox. Besides, you will have a clearer idea of the ideal tool you need to add to your toolbox. You may decide not to add that tool (perhaps it isn't something you foresee requiring again and you have no interest in the domain), at least you are in an educated position to make that decision.
 
