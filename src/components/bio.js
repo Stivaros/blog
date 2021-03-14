@@ -7,7 +7,8 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faHome } from "@fortawesome/free-solid-svg-icons"
@@ -19,9 +20,11 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
+          gatsbyImageData(
+            height: 50
+            layout: FIXED
+            width: 50
+          )
         }
       }
       site {
@@ -46,8 +49,8 @@ const Bio = () => {
         display: `flex`,
       }}
     >
-      <Image
-        fixed={data.avatar.childImageSharp.fixed}
+      <GatsbyImage
+        image={data.avatar.childImageSharp.gatsbyImageData}
         alt={author.name}
         style={{
           marginRight: rhythm(1 / 2),
