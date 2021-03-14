@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 import { faHome } from "@fortawesome/free-solid-svg-icons"
