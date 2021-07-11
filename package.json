@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "stivaros-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Personal blog for Efstathios Stivaros based upon gatsby-starter-blog",
+  "version": "1.0.0",
+  "author": "Efstathios Stivaros <efstathios@stivaros.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Stivaros/blog/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
