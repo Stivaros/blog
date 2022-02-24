@@ -25,6 +25,10 @@ const Seo = ({ description, lang, meta, title }) => {
     `
   )
 
+  return <PureSeo description={description} lang={lang} meta={meta} title={title} site={site} />
+}
+
+export const PureSeo = ({ description, lang, meta, title, site}) => {
   const metaDescription = description || site.siteMetadata.description
 
   return (
