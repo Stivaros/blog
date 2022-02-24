@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout when on root path renders correctly 1`] = `
+<div
+  style={
+    Object {
+      "marginLeft": "auto",
+      "marginRight": "auto",
+      "maxWidth": "34.8rem",
+      "padding": "2.175rem 1.0875rem",
+    }
+  }
+>
+  <header>
+    <h1
+      style={
+        Object {
+          "marginBottom": "2.175rem",
+          "marginTop": 0,
+        }
+      }
+    >
+      <a
+        href="/"
+      >
+         | All Posts
+      </a>
+    </h1>
+  </header>
+  <main />
+  <footer>
+    © Efstathios Stivaros 
+    2022
+    , Built with
+     
+    <a
+      href="https://www.gatsbyjs.org"
+    >
+      Gatsby
+    </a>
+  </footer>
+</div>
+`;
