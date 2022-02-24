@@ -44,7 +44,12 @@
     "typography-theme-fairy-gates": "^0.16.19"
   },
   "devDependencies": {
-    "prettier": "^2.3.2"
+    "babel-jest": "^27.4.6",
+    "babel-preset-gatsby": "^1.9.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.7",
+    "prettier": "^2.3.2",
+    "react-test-renderer": "^17.0.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -63,7 +68,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "preload-fonts": "gatsby-preload-fonts"
   }
 }
