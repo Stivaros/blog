@@ -22,5 +22,15 @@ module.exports = {
       })
   ),
   StaticQuery: jest.fn(),
-  useStaticQuery: jest.fn(),
+  useStaticQuery: jest.fn().mockReturnValue({
+    site: {
+      siteMetadata: {
+        title: 'Test Blog',
+        description: 'Test meta description',
+        social: {
+          twitter: 'twitterHandle'
+        }
+      }
+    }
+  }),
 }
