@@ -1,5 +1,5 @@
 const React = require("react")
-const Gatsby = jest.requireActual("gatsby")
+const gatsby = jest.requireActual("gatsby")
 
 module.exports = {
   ...gatsby,
