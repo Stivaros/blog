@@ -15,7 +15,7 @@ import { faHome } from "@fortawesome/free-solid-svg-icons"
 
 import { rhythm } from "../utils/typography"
 
-const Bio = () => {
+export const Bio = props => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
@@ -42,6 +42,10 @@ const Bio = () => {
     }
   `)
 
+  return <PureBio {...props} data={data} />
+}
+
+export const PureBio = ({data}) => {
   const { author, social } = data.site.siteMetadata
   return (
     <div
