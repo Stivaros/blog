@@ -2,7 +2,7 @@
   "name": "stivaros-blog",
   "private": true,
   "description": "Personal blog for Efstathios Stivaros based upon gatsby-starter-blog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Efstathios Stivaros <efstathios@stivaros.com>",
   "bugs": {
     "url": "https://github.com/Stivaros/blog/issues"
