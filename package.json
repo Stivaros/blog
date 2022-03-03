@@ -42,11 +42,11 @@
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.76",
     "babel-jest": "^27.4.6",
-    "babel-preset-gatsby": "^1.9.0",
+    "babel-preset-gatsby": "^2.9.0",
     "gatsby-plugin-percy": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.5.1",
-    "prettier": "^2.3.2",
+    "prettier": "^2.5.1",
     "react-test-renderer": "^17.0.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
