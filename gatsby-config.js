@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: "always",
   siteMetadata: {
     title: `Blog`,
     author: {
@@ -66,7 +67,6 @@ module.exports = {
         enableWebVitalsTracking: true,
       },
     },
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
