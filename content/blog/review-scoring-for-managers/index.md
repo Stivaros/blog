@@ -82,7 +82,7 @@ Markers for this score:
 * Almost meeting expected output
   * People, systems and projects are completing 85%+ of their workload
 * Acceptable quality
-  * People need someone trusted to give their work a once-over (in technical teams I strongly believe all code should be reviewed, in this case someone more seniorshould be doing the reviewing)
+  * People need someone trusted to give their work a once-over (in technical teams I strongly believe all code should be reviewed, in this case someone more senior should be doing the reviewing)
   * Systems/projects are functional but some flaws are known and worked-around
 * Morale
   * People are OK in most circumstances
