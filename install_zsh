@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+curl https://raw.githubusercontent.com/Stivaros/dotfiles/main/.zsh/.zshrc > ~/.zshrc
+echo 'alias gpod="/usr/bin/gp"' >> ~/.zshrc
+zsh
