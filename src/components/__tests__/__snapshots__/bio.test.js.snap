@@ -39,7 +39,7 @@ exports[`Bio renders correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-home fa-w-18 "
+          className="svg-inline--fa fa-home "
           data-icon="home"
           data-prefix="fas"
           focusable="false"
@@ -66,7 +66,7 @@ exports[`Bio renders correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-twitter fa-w-16 "
+          className="svg-inline--fa fa-twitter "
           data-icon="twitter"
           data-prefix="fab"
           focusable="false"
@@ -93,7 +93,7 @@ exports[`Bio renders correctly 1`] = `
       >
         <svg
           aria-hidden="true"
-          className="svg-inline--fa fa-linkedin-in fa-w-14 "
+          className="svg-inline--fa fa-linkedin-in "
           data-icon="linkedin-in"
           data-prefix="fab"
           focusable="false"

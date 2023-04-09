@@ -2,7 +2,7 @@
   "name": "stivaros-blog",
   "private": true,
   "description": "Personal blog for Efstathios Stivaros based upon gatsby-starter-blog",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Efstathios Stivaros <efstathios@stivaros.com>",
   "bugs": {
     "url": "https://github.com/Stivaros/blog/issues"
@@ -12,7 +12,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.17",
-    "gatsby": "^4.9.1",
+    "gatsby": "^4.25.0",
     "gatsby-plugin-google-analytics": "^4.9.0",
     "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-manifest": "^4.9.0",

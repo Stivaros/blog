@@ -30,7 +30,7 @@ exports[`Layout when on root path renders correctly 1`] = `
   <main />
   <footer>
     © Efstathios Stivaros 
-    2022
+    2023
     , Built with
      
     <a
