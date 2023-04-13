@@ -3,7 +3,7 @@
 exports[`Layout when on root path renders correctly 1`] = `
 <div
   style={
-    Object {
+    {
       "marginLeft": "auto",
       "marginRight": "auto",
       "maxWidth": "34.8rem",
@@ -14,7 +14,7 @@ exports[`Layout when on root path renders correctly 1`] = `
   <header>
     <h1
       style={
-        Object {
+        {
           "marginBottom": "2.175rem",
           "marginTop": 0,
         }
