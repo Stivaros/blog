@@ -11,7 +11,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faHome } from "@fortawesome/free-solid-svg-icons"
+import { faHouseChimney } from "@fortawesome/free-solid-svg-icons"
 
 import { rhythm } from "../utils/typography"
 
@@ -78,7 +78,7 @@ export const PureBio = ({data}) => {
           }}
         >
           <a href={`http://stivaros.com/`} style={{margin: `0 0.25em`}} aria-label="Home">
-            <FontAwesomeIcon icon={faHome} />
+            <FontAwesomeIcon icon={faHouseChimney} />
           </a>
           <a href={`https://twitter.com/${social.twitter}`} style={{margin: `0 0.25em`}} aria-label="Twitter">
             <FontAwesomeIcon icon={faTwitter} />
