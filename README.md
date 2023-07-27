@@ -10,5 +10,13 @@ Instructions and inspiration from [Dave Ceddia's blog](https://daveceddia.com/st
 No installation or usage instructions as I'm the only one running this. Feel free to fork and play around.
 Ideally, use the blog post above to get yourself up and running!
 
+## Create a new post
+
+ChatGPT helped (read: did **all of the heavy lifting**) in writing a script that will set up a new post.
+
+```
+$ ./new-post.sh "Post title goes here"
+```
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
