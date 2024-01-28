@@ -41,11 +41,11 @@
   },
   "devDependencies": {
     "@percy/cli": "^1.0.0-beta.76",
-    "babel-jest": "^29.5.0",
+    "babel-jest": "^29.7.0",
     "babel-preset-gatsby": "^3.11.0",
     "gatsby-plugin-percy": "^1.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "^29.5.0",
+    "jest": "^29.7.0",
     "prettier": "^3.0.0",
     "react-test-renderer": "^18.2.0"
   },
