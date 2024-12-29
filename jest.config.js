@@ -26,7 +26,8 @@ module.exports = {
   coveragePathIgnorePatterns: [
     `<rootDir>/node_modules/`,
     `<rootDir>/.cache/`,
-    `<rootDir>/public/`
+    `<rootDir>/public/`,
+    `<rootDir>/src/utils/typography\\.js$`
   ],
   coverageReporters: ["lcov", "text", "html"]
 }
