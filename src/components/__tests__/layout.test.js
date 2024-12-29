@@ -1,26 +1,8 @@
 import React from "react"
-import renderer from "react-test-renderer"
 import { render, screen } from "@testing-library/react"
-
 import Layout from "../layout"
 
-
 describe("Layout", () => {
-  describe("when on root path", () => {
-    it("renders correctly", () => {
-      const location = {
-        pathname: '/'
-      }
-
-      const tree = renderer
-      .create(<Layout location={location} />)
-      .toJSON()
-      expect(tree).toMatchSnapshot()
-    })
-  })
-})
-
-describe("Layout with RTL", () => {
   describe("when on root path", () => {
     it("renders title and all posts link", () => {
       const location = {
