@@ -21,4 +21,12 @@ module.exports = {
   },
   setupFiles: [`<rootDir>/loadershim.js`],
   setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
+  collectCoverage: false,
+  coverageDirectory: "<rootDir>/coverage",
+  coveragePathIgnorePatterns: [
+    `<rootDir>/node_modules/`,
+    `<rootDir>/.cache/`,
+    `<rootDir>/public/`
+  ],
+  coverageReporters: ["lcov", "text", "html"]
 }
