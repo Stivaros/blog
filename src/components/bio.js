@@ -76,6 +76,7 @@ export const PureBio = ({data}) => {
             padding: `0.4em 0.25em 0.25em`,
             borderRadius: `0.25em`
           }}
+          aria-label="social links"
         >
           <a href={`http://stivaros.com/`} style={{margin: `0 0.25em`}} aria-label="Home">
             <FontAwesomeIcon icon={faHouseChimney} />

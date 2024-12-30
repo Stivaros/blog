@@ -5,22 +5,40 @@ module.exports = {
   ...gatsby,
   graphql: jest.fn(),
   Link: jest.fn().mockImplementation(
-    ({
-      activeClassName,
-      activeStyle,
-      getProps,
-      innerRef,
-      partiallyActive,
-      ref,
-      replace,
-      to,
-      ...rest
-    }) =>
+    ({ to, ...rest }) =>
       React.createElement("a", {
         ...rest,
         href: to,
       })
   ),
-  StaticQuery: jest.fn(),
-  useStaticQuery: jest.fn(),
+  useStaticQuery: jest.fn().mockReturnValue({
+    avatar: {
+      childImageSharp: {
+        gatsbyImageData: {
+          layout: 'fixed',
+          width: 50,
+          height: 50,
+          images: {
+            fallback: {
+              src: 'test-image.jpg'
+            }
+          }
+        }
+      },
+    },
+    site: {
+      siteMetadata: {
+        title: 'Test Blog',
+        description: 'Test meta description',
+        author: {
+          name: 'Stath',
+          summary: 'A test blog',
+        },
+        social: {
+          twitter: 'twitterHandle',
+          linkedIn: 'linkedInHandle',
+        },
+      },
+    },
+  }),
 }

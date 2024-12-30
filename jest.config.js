@@ -15,8 +15,19 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: ``,
   },
+  testEnvironment: "jsdom",
   testEnvironmentOptions: {
     url: `http://localhost`,
   },
   setupFiles: [`<rootDir>/loadershim.js`],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.js'],
+  collectCoverage: false,
+  coverageDirectory: "<rootDir>/coverage",
+  coveragePathIgnorePatterns: [
+    `<rootDir>/node_modules/`,
+    `<rootDir>/.cache/`,
+    `<rootDir>/public/`,
+    `<rootDir>/src/utils/typography\\.js$`
+  ],
+  coverageReporters: ["lcov", "text", "html"]
 }
