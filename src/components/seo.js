@@ -7,8 +7,29 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+
+export const PureSeo = ({ description, lang, meta, title, site }) => {
+  const metaDescription = description || site.siteMetadata.description
+
+  return (
+    <>
+      <html lang={lang} />
+      <title>{title} | {site.siteMetadata.title}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={site.siteMetadata.social.twitter} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      {meta.map((metaItem, i) => (
+        <meta key={i} {...metaItem} />
+      ))}
+    </>
+  )
+}
 
 export const Seo = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
@@ -26,54 +47,6 @@ export const Seo = ({ description, lang, meta, title }) => {
   )
 
   return <PureSeo description={description} lang={lang} meta={meta} title={title} site={site} />
-}
-
-export const PureSeo = ({ description, lang, meta, title, site}) => {
-  const metaDescription = description || site.siteMetadata.description
-
-  return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.social.twitter,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
-  )
 }
 
 Seo.defaultProps = {
