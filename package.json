@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@percy/cli": "^1.27.7",
+    "@playwright/test": "^1.49.1",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@testing-library/user-event": "^14.5.2",
@@ -69,6 +70,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
     "preload-fonts": "gatsby-preload-fonts"
   }
 }
