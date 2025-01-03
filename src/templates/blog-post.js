@@ -13,10 +13,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
-      />
       <article>
         <header>
           <h1
@@ -99,3 +95,10 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export const Head = ({ data: { markdownRemark: post } }) => (
+  <Seo
+    title={post.frontmatter.title}
+    description={post.frontmatter.description || post.excerpt}
+  />
+)
