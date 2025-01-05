@@ -32,7 +32,7 @@ By digging further than just the surface you'll identify more complex problems. 
 
 Most modern code is an abstraction on top of abstractions on top of other abstractions. There are [turtles all the way down](https://en.wikipedia.org/wiki/Turtles_all_the_way_down). Why not [stand on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants)? There is a limit to how much you can learn, from scratch, on a subject.
 
-Your goal should be to obtain an understanding of the first principles as quickly as possible. Open your eyes just enough to see the [known unknowns](https://whatis.techtarget.com/definition/known-unknown). Use those around you to accelerate that process. Does a colleague have any resources they can recommend?  Do you have a senior who can give you an [ELI5](https://www.dictionary.com/e/slang/eli5/) in fifteen minutes?
+Your goal should be to obtain an understanding of the first principles as quickly as possible. Open your eyes just enough to see the [known unknowns](https://whatis.techtarget.com/definition/known-unknown). Use those around you to accelerate that process. Does a colleague have any resources they can recommend? Do you have a senior who can give you an [ELI5](https://www.dictionary.com/e/slang/eli5/) in fifteen minutes?
 
 The key is not to ask someone to mentor you on a subject one-to-one for hours on end. It is unfair to expect them to carry you to an expert level of understanding. You're merely tapping into their knowledge to guide your path of discovery. There's a lot of information out there in the wild, you need a little help navigating it and separating the wheat from the chaff.
 

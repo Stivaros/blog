@@ -5,26 +5,22 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage } from "gatsby-plugin-image"
-import '@fortawesome/fontawesome-svg-core/styles.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
-import { faHouseChimney } from "@fortawesome/free-solid-svg-icons"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitter, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faHouseChimney } from "@fortawesome/free-solid-svg-icons";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 
-export const Bio = props => {
+export const Bio = (props) => {
   const data = useStaticQuery(graphql`
     query BioQuery {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
-          gatsbyImageData(
-            height: 50
-            layout: FIXED
-            width: 50
-          )
+          gatsbyImageData(height: 50, layout: FIXED, width: 50)
         }
       }
       site {
@@ -40,13 +36,13 @@ export const Bio = props => {
         }
       }
     }
-  `)
+  `);
 
-  return <PureBio {...props} data={data} />
-}
+  return <PureBio {...props} data={data} />;
+};
 
-export const PureBio = ({data}) => {
-  const { author, social } = data.site.siteMetadata
+export const PureBio = ({ data }) => {
+  const { author, social } = data.site.siteMetadata;
   return (
     <div
       style={{
@@ -67,30 +63,44 @@ export const PureBio = ({data}) => {
         }}
       />
       <p>
-        I am <strong>{author.name}</strong>, {author.summary}<br /><br />
+        I am <strong>{author.name}</strong>, {author.summary}
+        <br />
+        <br />
         Find me online
         {` `}
         <span
           style={{
             backgroundColor: `#C5E1A5`,
             padding: `0.4em 0.25em 0.25em`,
-            borderRadius: `0.25em`
+            borderRadius: `0.25em`,
           }}
           aria-label="social links"
         >
-          <a href={`http://stivaros.com/`} style={{margin: `0 0.25em`}} aria-label="Home">
+          <a
+            href={`http://stivaros.com/`}
+            style={{ margin: `0 0.25em` }}
+            aria-label="Home"
+          >
             <FontAwesomeIcon icon={faHouseChimney} />
           </a>
-          <a href={`https://twitter.com/${social.twitter}`} style={{margin: `0 0.25em`}} aria-label="Twitter">
+          <a
+            href={`https://twitter.com/${social.twitter}`}
+            style={{ margin: `0 0.25em` }}
+            aria-label="Twitter"
+          >
             <FontAwesomeIcon icon={faTwitter} />
           </a>
-          <a href={`https://linkedin.com/in/${social.linkedIn}`} style={{margin: `0 0.25em`}} aria-label="LinkedIn">
+          <a
+            href={`https://linkedin.com/in/${social.linkedIn}`}
+            style={{ margin: `0 0.25em` }}
+            aria-label="LinkedIn"
+          >
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </span>
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Bio
+export default Bio;

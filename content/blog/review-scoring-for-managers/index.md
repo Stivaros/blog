@@ -10,7 +10,7 @@ _In a rush? Lazy? This section explains the scores in a nutshell_
 
 **1/5:** Significant underperformance - cost of remediation is prohibitive, look to replace
 
-**2/5:** Slight underperformance - managers should focus here,  turn 2s into 3s for greatest return
+**2/5:** Slight underperformance - managers should focus here, turn 2s into 3s for greatest return
 
 **3/5:** Good - performing as expected
 
@@ -42,11 +42,11 @@ If you are the sort of person that defaults to 7/10 rather than 5/10, you will p
 
 People need to know what they're being assessed against. Projects and systems don't, but setting expectations ahead of time prevents bias after the fact. Therefore, we must start by explaining the behaviours and outcomes we want to see.
 
-* Set high standards
-* Ensure the standards are understood
-* Confirm acceptance/buy-in of the standards
-* At every opportunity, model those standards
-* Highlight those standards often
+- Set high standards
+- Ensure the standards are understood
+- Confirm acceptance/buy-in of the standards
+- At every opportunity, model those standards
+- Highlight those standards often
 
 Essentially, set a high bar and then constantly refer back to it. Use your current outstanding people and systems/projects as benchmarks. Encourage innovation - the current outstanding performance should be beaten by the next period's outstanding performance. If someone new joins your team, any member of the team should be able to able to explain the standards to them, such should be their level of familiarity.
 
@@ -60,15 +60,15 @@ Things can be recovered from this stage but, in my experience, the effort likely
 
 Markers for this score:
 
-* Little to no output
-  * People are lost
-  * Systems/projects have stalled or progress very slowly
-* Low quality
-  * People are producing work that has to be reworked or is barely presentable
-  * Systems/projects are outdated by the time they're put into action
-* Morale
-  * People are toxic, actively spreading poor morale to others
-  * Systems/projects are sapping energy and causing resignations
+- Little to no output
+  - People are lost
+  - Systems/projects have stalled or progress very slowly
+- Low quality
+  - People are producing work that has to be reworked or is barely presentable
+  - Systems/projects are outdated by the time they're put into action
+- Morale
+  - People are toxic, actively spreading poor morale to others
+  - Systems/projects are sapping energy and causing resignations
 
 #### 2/5 (Slight underperformance)
 
@@ -79,14 +79,14 @@ Given the high standards that should be set in advance, this is not a bad score.
 
 Markers for this score:
 
-* Almost meeting expected output
-  * People, systems and projects are completing 85%+ of their workload
-* Acceptable quality
-  * People need someone trusted to give their work a once-over (in technical teams I strongly believe all code should be reviewed, in this case someone more senior should be doing the reviewing)
-  * Systems/projects are functional but some flaws are known and worked-around
-* Morale
-  * People are OK in most circumstances
-  * Systems/projects are workable but there are common complaints and hesitance to use
+- Almost meeting expected output
+  - People, systems and projects are completing 85%+ of their workload
+- Acceptable quality
+  - People need someone trusted to give their work a once-over (in technical teams I strongly believe all code should be reviewed, in this case someone more senior should be doing the reviewing)
+  - Systems/projects are functional but some flaws are known and worked-around
+- Morale
+  - People are OK in most circumstances
+  - Systems/projects are workable but there are common complaints and hesitance to use
 
 #### 3/5 (Good)
 
@@ -95,15 +95,15 @@ It means that everything is operating as it should and the review should be posi
 
 Markers for this score:
 
-* Achieving expected output against deadlines
-  * People are completing all work assigned to them in the agreed timescales and can onboard new joiners
-  * Systems/projects are progressing or as productive as expected
-* High quality
-  * People are producing work that is agreeable without major redrafting
-  * Systems/projects 'just work' (NB: this is actually quite an achievement)
-* Morale
-  * People fit into the team well and are respected
-  * Systems/projects don't warrant any major criticism, nor are they particularly enjoyed
+- Achieving expected output against deadlines
+  - People are completing all work assigned to them in the agreed timescales and can onboard new joiners
+  - Systems/projects are progressing or as productive as expected
+- High quality
+  - People are producing work that is agreeable without major redrafting
+  - Systems/projects 'just work' (NB: this is actually quite an achievement)
+- Morale
+  - People fit into the team well and are respected
+  - Systems/projects don't warrant any major criticism, nor are they particularly enjoyed
 
 #### 4/5 (Excellent)
 
@@ -113,15 +113,15 @@ Naturally, there will be a maximum of two/three people attaining this level per 
 
 Markers for this score:
 
-* Output is better than expected
-  * People are either completing work early or shipping more than expected within deadlines, they guide the project
-  * Systems/projects are ahead of schedule or under budget
-* High quality
-  * People are achieving the above without cutting corners
-  * Systems/projects have a reputation for being robust and fully-functional
-* Morale
-  * People are role models within their project team
-  * Systems/projects are a pleasure to work within/on
+- Output is better than expected
+  - People are either completing work early or shipping more than expected within deadlines, they guide the project
+  - Systems/projects are ahead of schedule or under budget
+- High quality
+  - People are achieving the above without cutting corners
+  - Systems/projects have a reputation for being robust and fully-functional
+- Morale
+  - People are role models within their project team
+  - Systems/projects are a pleasure to work within/on
 
 #### 5/5 (Outstanding)
 
@@ -131,12 +131,12 @@ Naturally, there will be a maximum of one/two people attaining this level within
 
 Markers for this score:
 
-* Output is better than expected on a consistent basis
-  * People are producing the highest-value work across the entire company, setting higher standards
-  * Systems/projects are running smooth and efficient to a level unseen before
-* Company-leading quality
-  * People are the ones defining the company's greatest ability
-  * Systems/projects set the tone for future expectations
-* Morale
-  * People are role models for the entire company, working with them is exciting
-  * Systems/projects are respected - working on them is a privilege
+- Output is better than expected on a consistent basis
+  - People are producing the highest-value work across the entire company, setting higher standards
+  - Systems/projects are running smooth and efficient to a level unseen before
+- Company-leading quality
+  - People are the ones defining the company's greatest ability
+  - Systems/projects set the tone for future expectations
+- Morale
+  - People are role models for the entire company, working with them is exciting
+  - Systems/projects are respected - working on them is a privilege

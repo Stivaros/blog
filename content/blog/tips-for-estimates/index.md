@@ -36,9 +36,9 @@ Within the context of software development, it's a three-round process:
 
 1. Estimate - With minimal context, everyone (often anonymously) provides a perceived complexity
 1. Talk - Questions based upon the results of the first round, talking points may include:
-    * How spread out the estimates are (i.e. how **precise** the collection is)
-    * Whether people are generally measuring in the same unit such as hours, days or weeks
-    * The highest and lowest estimate
+   - How spread out the estimates are (i.e. how **precise** the collection is)
+   - Whether people are generally measuring in the same unit such as hours, days or weeks
+   - The highest and lowest estimate
 1. Estimate - Another round of estimates given the shared context everyone now possesses
 
 ### Why does this work?
@@ -46,7 +46,7 @@ Within the context of software development, it's a three-round process:
 Most places only have the first round of estimates, with a little discussion. This framework takes those estimates and uses them solely to facilitate discussion. During this discussion, everyone can chip in with their thoughts. The shared context should lead to a tighter second round of estimates. The discussion phase usually bubbles up perceived issues, sometimes with solutions.
 
 For example, a junior engineer may say something like:
- "This will take two weeks because I am not confident in touching this bit of the codebase. So, it'll take me a week to get comfortable". This may resolved by an opportunity to pair with a more senior engineer for two hours, to help.
+"This will take two weeks because I am not confident in touching this bit of the codebase. So, it'll take me a week to get comfortable". This may resolved by an opportunity to pair with a more senior engineer for two hours, to help.
 
 Another example, may be that there is a dependency on another area of the codebase. A second engineer may already be working on that bit of the codebase. They may be able to take a quick detour to clear the path for this body of work.
 
@@ -86,7 +86,7 @@ So why not do away with estimation altogether?
 
 ### Uniform tickets
 
-There is a school of thought that states that a good planning process results in tickets of  the same size. In my opinion, vastly different sizes are a failure of the planning process.
+There is a school of thought that states that a good planning process results in tickets of the same size. In my opinion, vastly different sizes are a failure of the planning process.
 
 Settle on a rough idea of what a ticket should look like. For example, five story points. Now, split up every ticket so that it's the same size. No need to estimate if everything should be the same.
 

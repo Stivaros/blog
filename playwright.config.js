@@ -1,13 +1,13 @@
-import { defineConfig } from '@playwright/test';
+import { defineConfig } from "@playwright/test";
 
 export default defineConfig({
-  testDir: './e2e',
+  testDir: "./e2e",
   use: {
-    baseURL: 'http://localhost:8000',
+    baseURL: "http://localhost:8000",
   },
   webServer: {
-    command: 'npm run develop',
-    url: 'http://localhost:8000',
+    command: "npm run develop",
+    url: "http://localhost:8000",
     reuseExistingServer: !process.env.CI,
   },
 });

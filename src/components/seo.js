@@ -5,17 +5,19 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { useStaticQuery, graphql } from "gatsby";
 
 export const PureSeo = ({ description, lang, meta, title, site }) => {
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <>
       <html lang={lang} />
-      <title>{title} | {site.siteMetadata.title}</title>
+      <title>
+        {title} | {site.siteMetadata.title}
+      </title>
       <meta name="description" content={metaDescription} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
@@ -28,38 +30,46 @@ export const PureSeo = ({ description, lang, meta, title, site }) => {
         <meta key={i} {...metaItem} />
       ))}
     </>
-  )
-}
+  );
+};
 
 export const Seo = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            social { twitter }
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          social {
+            twitter
           }
         }
       }
-    `
-  )
+    }
+  `);
 
-  return <PureSeo description={description} lang={lang} meta={meta} title={title} site={site} />
-}
+  return (
+    <PureSeo
+      description={description}
+      lang={lang}
+      meta={meta}
+      title={title}
+      site={site}
+    />
+  );
+};
 
 Seo.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
 Seo.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default Seo
+export default Seo;

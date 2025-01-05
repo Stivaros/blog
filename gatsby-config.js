@@ -50,10 +50,10 @@ module.exports = {
             resolve: `gatsby-remark-prismjs`,
             options: {
               aliases: {
-                zsh: "bash"
+                zsh: "bash",
               },
-              inlineCodeMarker: '›',
-            }
+              inlineCodeMarker: "›",
+            },
           },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -82,6 +82,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-preload-fonts`,
-    `gatsby-plugin-percy`
+    `gatsby-plugin-percy`,
   ],
-}
+};
