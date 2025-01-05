@@ -8,9 +8,9 @@ This is a set of debugging phases for engineers of all abilities and experience 
 
 They are:
 
-* 30 minutes spent exploring the problem
-* 30 minutes spent attempting solutions
-* 30 minutes spent pairing
+- 30 minutes spent exploring the problem
+- 30 minutes spent attempting solutions
+- 30 minutes spent pairing
 
 ## Explore the Problem
 
@@ -20,9 +20,9 @@ Put some breakpoints into your code and explore what the values look like as the
 
 At this stage, you are **not allowed** to Google error messages or use StackOverflow. You **should** look at official documentation, though. Between your language's stdlib or your framework's public API, it is likely:
 
-* There's a method that does something you need
-* There's a better way to write some of your application code
-* There has been a poor understanding that is leading to poor implementation
+- There's a method that does something you need
+- There's a better way to write some of your application code
+- There has been a poor understanding that is leading to poor implementation
 
 If you can solve the problem at this stage, fantastic. Gold star. Sometimes, the problem is more complex, so move to the next stage.
 

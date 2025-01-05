@@ -1,11 +1,11 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
-  let header
+  const rootPath = `${__PATH_PREFIX__}/`;
+  let header;
 
   if (location.pathname === rootPath) {
     header = (
@@ -15,11 +15,9 @@ const Layout = ({ location, title, children }) => {
           marginTop: 0,
         }}
       >
-        <Link to={`/`}>
-          {title} | All Posts
-        </Link>
+        <Link to={`/`}>{title} | All Posts</Link>
       </h1>
-    )
+    );
   } else {
     header = (
       <h3
@@ -36,7 +34,7 @@ const Layout = ({ location, title, children }) => {
           &larr; Back to {title} Index
         </Link>
       </h3>
-    )
+    );
   }
   return (
     <div
@@ -55,7 +53,7 @@ const Layout = ({ location, title, children }) => {
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

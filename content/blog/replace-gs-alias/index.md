@@ -15,7 +15,7 @@ lifting a bit of the heavy load that `git›git checkout` carries.
 ## How to Replace the Alias
 
 Now, how to replace the existing `git›gs` alias? With great ease, thankfully.
-I use (and recommend) [oh\_my\_zsh](https://github.com/ohmyzsh/ohmyzsh) but similar steps are available for bash, etc.
+I use (and recommend) [oh_my_zsh](https://github.com/ohmyzsh/ohmyzsh) but similar steps are available for bash, etc.
 Firstly, as per [my previous post on getting the current DateTime](../timestamp-iso8601-terminal),
 I need to open my alias file.
 
@@ -41,6 +41,7 @@ To which I simply add:
 alias current_time="date --utc +%FT%T.%3NZ"
 alias gs
 ```
+
 Reload the terminal and it works!
 
 ## Reasons to Change the Alias
@@ -50,7 +51,7 @@ Given that I've never wanted to open it, having it aliased seems silly.
 That accidentally opening it feels like six-hour round-trip to load and then close it is reason enough to get rid.
 
 In particular, however, I have `git›gss` aliased for `git›git status -s`, which is one of my most used aliases.
-Due to the brilliant piece of trolling that was the placement of the `text›s` key on the pinky of the left hand 
+Due to the brilliant piece of trolling that was the placement of the `text›s` key on the pinky of the left hand
 (because a) it's the weakest finger of the generally weaker hand and b) it's one of the most popular characters for typing),
 I often typo `git›gss` as `git›gs`.
 

@@ -19,4 +19,5 @@ $ ./new-post.sh "Post title goes here"
 ```
 
 ## License
+
 [MIT](https://choosealicense.com/licenses/mit/)

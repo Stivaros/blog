@@ -36,11 +36,11 @@ The problem will always exist, developers still have to read to understand what 
 
 There are a million articles on readable code on the internet. Here are some tips to get you started:
 
-* Use easily understood class, [method](https://github.com/uohzxela/clean-code-ruby#method-names-should-say-what-they-do) and [variable names](https://github.com/uohzxela/clean-code-ruby#use-meaningful-and-pronounceable-variable-names)
-* Eradicate [magic numbers](https://github.com/uohzxela/clean-code-ruby#use-searchable-names-and-use-constants)
-* Abstract bits of [conditional logic in a readable way](https://github.com/uohzxela/clean-code-ruby#encapsulate-conditionals)
-* Aim to be readable, not clever
-* Adhere to the principles of [Clean Code](https://www.oreilly.com/library/view/clean-code/9780136083238/)
+- Use easily understood class, [method](https://github.com/uohzxela/clean-code-ruby#method-names-should-say-what-they-do) and [variable names](https://github.com/uohzxela/clean-code-ruby#use-meaningful-and-pronounceable-variable-names)
+- Eradicate [magic numbers](https://github.com/uohzxela/clean-code-ruby#use-searchable-names-and-use-constants)
+- Abstract bits of [conditional logic in a readable way](https://github.com/uohzxela/clean-code-ruby#encapsulate-conditionals)
+- Aim to be readable, not clever
+- Adhere to the principles of [Clean Code](https://www.oreilly.com/library/view/clean-code/9780136083238/)
 
 Remember, just because you are _capable_ of writing nested ternaries and complex one-line algorithms doesn't mean you _should_.
 
@@ -48,10 +48,10 @@ Remember, just because you are _capable_ of writing nested ternaries and complex
 
 We strive to implement the best solution possible. With an additional six months under our belt, we often realise there was a better way to go about doing something. By documenting the factors that influenced a decision, we can quickly reassess the decision at a later stage. How can we log these decisions?
 
-* [Architectural Decision Records](https://adr.github.io/) (ADRs)
-* Comments in the code
-* Notes in expanded commit messages
-* [PR descriptions](https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests) that fully describe all the 'gotchas' encountered
+- [Architectural Decision Records](https://adr.github.io/) (ADRs)
+- Comments in the code
+- Notes in expanded commit messages
+- [PR descriptions](https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests) that fully describe all the 'gotchas' encountered
 
 You don't need to utilise _all_ the above (in fact some people would actively discourage comments in the code) but even one is better than none.
 
@@ -59,11 +59,11 @@ You don't need to utilise _all_ the above (in fact some people would actively di
 
 Assuming you are responsible for the documentation, ensure that you've created the appropriate documentation. If someone else is responsible, liaise with them to ensure the documentation is to a high standard. If no-one is responsible, it's time to become a trendsetter; be the first to write meaningful documentation. Here are some examples of documentation:
 
-* Automated tests with descriptive names and contexts
-* Appropriately labelled diagrams
-* Full audit trail on the ticket
-* Clear and concise [commit messages](https://chris.beams.io/posts/git-commit/)
-* Confluence, Wiki, Asana, etc.
+- Automated tests with descriptive names and contexts
+- Appropriately labelled diagrams
+- Full audit trail on the ticket
+- Clear and concise [commit messages](https://chris.beams.io/posts/git-commit/)
+- Confluence, Wiki, Asana, etc.
 
 None of these suggestions are particularly innovative but there's a reason they're so popular - they do the job.
 

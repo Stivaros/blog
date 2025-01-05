@@ -5,11 +5,11 @@ description: "Using the terminal to provide a formatted DateTime"
 ---
 
 While preparing this blog I realised that the timestamps were not automatically generated.
-That actually makes a lot of sense, considering the lack of database and that I'm using [Gatsby](https://www.gatsbyjs.org/), 
+That actually makes a lot of sense, considering the lack of database and that I'm using [Gatsby](https://www.gatsbyjs.org/),
 a static site generator. How would timestamps be automatically generated?
 At _best_ they would be based upon commit time or something equally inaccurate, unless they're hardcoded.
 
-The [timestamps on the template](https://github.com/gatsbyjs/gatsby-starter-blog/blob/master/content/blog/hello-world/index.md) 
+The [timestamps on the template](https://github.com/gatsbyjs/gatsby-starter-blog/blob/master/content/blog/hello-world/index.md)
 were in full [ISO 8601 format](https://www.iso.org/iso-8601-date-and-time-format.html),
 including timezone and nanoseconds.
 
@@ -23,7 +23,7 @@ Some quick Googling turned [this up](https://zxq9.com/archives/795),
 with the answer I wanted:
 
 ```shell
-➜  blog git:(master) ✗ date --utc +%FT%T.%3NZ 
+➜  blog git:(master) ✗ date --utc +%FT%T.%3NZ
 2020-04-11T14:03:43.012Z
 ```
 
@@ -36,12 +36,13 @@ As I was looking for a good spot I found this note:
 > users are encouraged to define aliases within the ZSH_CUSTOM folder.
 > For a full list of active aliases, run `zsh›alias`.
 
-I'd never heard of that file before so had  to do some digging to find it.
+I'd never heard of that file before so had to do some digging to find it.
 Upon finding the file
 (`zsh›~/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh`, before you ask)
 I saw an accompanying README, with this note:
 
->To use it add `zsh›common-aliases` to the plugins array in your zshrc file:
+> To use it add `zsh›common-aliases` to the plugins array in your zshrc file:
+>
 > ```zsh
 > plugins=(... common-aliases)
 > ```
@@ -53,7 +54,7 @@ At the foot of the file I added these lines:
 # Custom
 
 alias current_time="date --utc +%FT%T.%3NZ"
-``` 
+```
 
 I then reloaded my terminal:
 

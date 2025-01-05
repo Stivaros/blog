@@ -22,7 +22,7 @@ If, however, I know how to wield a spirit level and am asked to complete the sam
 
 In essence, we have an internal list of things that we can do/have done and an evidence-base to suggest what we can do. These are the tools in our toolbox. Once we gain an understanding of a problem, we can then match the proposed solution against our toolbox.
 
-While this may seem like the argument against my approach (well, it successfully _is_ the counter-argument), I prefer to look at it from a different perspective: I am not familiar with this type of problem, nor do I have a means with which to solve it, therefore, this problem is more likely to be successfully solved by someone else. I am a software engineer,  other disciplines (such as data science or infrastructure engineering) have experts in those fields.
+While this may seem like the argument against my approach (well, it successfully _is_ the counter-argument), I prefer to look at it from a different perspective: I am not familiar with this type of problem, nor do I have a means with which to solve it, therefore, this problem is more likely to be successfully solved by someone else. I am a software engineer, other disciplines (such as data science or infrastructure engineering) have experts in those fields.
 
 ## Know Limitations
 
