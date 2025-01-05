@@ -30,17 +30,36 @@ jobs:
         if: steps.node-modules-cache.outputs.cache-hit != 'true'
         run: npm ci
         
-      - name: Setup Playwright browsers from cache
+      - name: Get browser versions
+        id: browser-versions
+        run: |
+          echo "chromium=$(npx playwright install --dry-run chromium 2>&1 | grep chromium | sha1sum | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+          echo "firefox=$(npx playwright install --dry-run firefox 2>&1 | grep firefox | sha1sum | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+          echo "webkit=$(npx playwright install --dry-run webkit 2>&1 | grep webkit | sha1sum | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+        
+      - name: Setup Chromium from cache
         uses: actions/cache@v4
-        id: playwright-cache
+        id: chromium-cache
         with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            playwright-${{ runner.os }}-
+          path: ~/.cache/ms-playwright/chromium-*
+          key: playwright-chromium-${{ runner.os }}-${{ steps.browser-versions.outputs.chromium }}
+          
+      - name: Setup Firefox from cache
+        uses: actions/cache@v4
+        id: firefox-cache
+        with:
+          path: ~/.cache/ms-playwright/firefox-*
+          key: playwright-firefox-${{ runner.os }}-${{ steps.browser-versions.outputs.firefox }}
+          
+      - name: Setup WebKit from cache
+        uses: actions/cache@v4
+        id: webkit-cache
+        with:
+          path: ~/.cache/ms-playwright/webkit-*
+          key: playwright-webkit-${{ runner.os }}-${{ steps.browser-versions.outputs.webkit }}
           
       - name: Install Playwright browsers
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        if: steps.chromium-cache.outputs.cache-hit != 'true' || steps.firefox-cache.outputs.cache-hit != 'true' || steps.webkit-cache.outputs.cache-hit != 'true'
         run: npx playwright install --with-deps
         
       - name: Run Jest tests
