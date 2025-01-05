@@ -1,0 +1,77 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: '.node-version'
+          cache: 'npm'
+          
+      - name: Setup node_modules from cache
+        uses: actions/cache@v4
+        id: node-modules-cache
+        with:
+          path: node_modules
+          key: node-modules-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          
+      - name: Install dependencies
+        if: steps.node-modules-cache.outputs.cache-hit != 'true'
+        run: npm ci
+        
+      - name: Get browser versions
+        id: browser-versions
+        run: |
+          echo "chromium=$(npx playwright install --dry-run chromium 2>&1 | grep chromium | sha1sum | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+          echo "firefox=$(npx playwright install --dry-run firefox 2>&1 | grep firefox | sha1sum | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+          echo "webkit=$(npx playwright install --dry-run webkit 2>&1 | grep webkit | sha1sum | cut -d' ' -f1)" >> $GITHUB_OUTPUT
+        
+      - name: Setup Chromium from cache
+        uses: actions/cache@v4
+        id: chromium-cache
+        with:
+          path: ~/.cache/ms-playwright/chromium-*
+          key: playwright-chromium-${{ runner.os }}-${{ steps.browser-versions.outputs.chromium }}
+          
+      - name: Setup Firefox from cache
+        uses: actions/cache@v4
+        id: firefox-cache
+        with:
+          path: ~/.cache/ms-playwright/firefox-*
+          key: playwright-firefox-${{ runner.os }}-${{ steps.browser-versions.outputs.firefox }}
+          
+      - name: Setup WebKit from cache
+        uses: actions/cache@v4
+        id: webkit-cache
+        with:
+          path: ~/.cache/ms-playwright/webkit-*
+          key: playwright-webkit-${{ runner.os }}-${{ steps.browser-versions.outputs.webkit }}
+          
+      - name: Install Playwright browsers
+        if: steps.chromium-cache.outputs.cache-hit != 'true' || steps.firefox-cache.outputs.cache-hit != 'true' || steps.webkit-cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps
+        
+      - name: Run Jest tests
+        run: npm test
+        
+      - name: Run Playwright tests
+        run: npm run test:e2e
+        
+      - name: Upload Playwright report
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
